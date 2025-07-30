@@ -4,7 +4,9 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import tseslint from "typescript-eslint";
 import { globalIgnores } from "eslint/config";
-import importPlugin from "eslint-plugin-import"; // Import the import plugin
+import cssReorder from "eslint-plugin-css-reorder"; 
+import perfectionist from "eslint-plugin-perfectionist";
+import pluginPrettier from 'eslint-plugin-prettier';
 
 export default tseslint.config([
   globalIgnores(["dist"]),
@@ -15,35 +17,12 @@ export default tseslint.config([
       tseslint.configs.recommended,
       reactHooks.configs["recommended-latest"],
       reactRefresh.configs.vite,
+      perfectionist.configs['recommended-natural'],
+      
     ],
-    // Add the import plugin to the plugins array
     plugins: {
-      import: importPlugin,
-    },
-    rules: {
-      // Configure the import/order rule for import sorting
-      "import/order": [
-        "error",
-        {
-          groups: [
-            "builtin",
-            "external",
-            "internal",
-            "parent",
-            "sibling",
-            "index",
-            "object",
-            "type",
-          ],
-          "newlines-between": "always", // Ensure a newline between import groups
-          alphabetize: {
-            order: "asc", // Sort imports alphabetically within each group
-            caseInsensitive: true,
-          },
-        },
-      ],
-      // Disable the default ESLint sort-imports rule to avoid conflicts
-      "sort-imports": "off",
+      "css-reorder": cssReorder,
+      prettier: pluginPrettier, 
     },
     languageOptions: {
       ecmaVersion: 2020,

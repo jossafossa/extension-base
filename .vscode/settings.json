@@ -1,5 +1,16 @@
 {
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.formatOnSave": true,
+
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  "stylelint.validate": ["css", "scss"], // Add 'html' if you lint HTML style blocks
+
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "explicit", // ESLint fixes for JS/TS
+    "source.fixAll.stylelint": "explicit" // Stylelint fixes for CSS/SCSS/Vue styles
   }
 }
