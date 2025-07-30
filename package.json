@@ -14,10 +14,12 @@
     "build:firefox": "vite build --config vite.config.firefox.ts",
     "dev": "nodemon --config nodemon.chrome.json",
     "dev:chrome": "nodemon --config nodemon.chrome.json",
-    "dev:firefox": "nodemon --config nodemon.firefox.json"
+    "dev:firefox": "nodemon --config nodemon.firefox.json",
+    "create": "plop --plopfile ./plopfile.js"
   },
   "type": "module",
   "dependencies": {
+    "classnames": "^2.5.1",
     "preact": "^10.27.0",
     "webextension-polyfill": "^0.12.0"
   },
@@ -42,6 +44,7 @@
     "fs-extra": "^11.3.0",
     "globals": "^16.3.0",
     "nodemon": "^3.1.10",
+    "plop": "^4.0.1",
     "sass-embedded": "^1.89.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
