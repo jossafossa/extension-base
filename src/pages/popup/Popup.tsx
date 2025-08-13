@@ -1,10 +1,5 @@
-import { Button } from "./components";
-import styles from "./Popup.module.scss";
+import { Settings } from "@/features";
 
 export const Popup = () => {
-  return (
-    <div className={styles.popup}>
-      <Button>My button</Button>
-    </div>
-  );
+  return <Settings />;
 };

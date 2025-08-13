@@ -1,0 +1,32 @@
+const BASE_PATH = "./src/{{camelCase name}}";
+
+export function {{camelCase name}}Generator(plop) {
+  plop.setGenerator("{{camelCase name}}", {
+    description: "Generate a {{camelCase name}}",
+    prompts: [
+      {
+        type: "input",
+        name: "name",
+        message: "{{camelCase name}} name:",
+      },
+    ],
+    actions: [
+      {
+        type: "add",
+        path: `${BASE_PATH}/{{curlyBraces "camelCase name"}}/{{curlyBraces "camelCase name"}}.ts`,
+        templateFile: "./tooling/{{camelCase name}}/{{camelCase name}}.ts.hbs",
+      },
+      {
+        type: "add",
+        path: `${BASE_PATH}/{{curlyBraces "camelCase name"}}/index.ts`,
+        templateFile: "./tooling/{{camelCase name}}/index.ts.hbs",
+      },
+      {
+        type: "append",
+        path: `${BASE_PATH}/index.ts`,
+        pattern: "/* PLOP_INJECT_EXPORT */",
+        template: 'export * from "./{{curlyBraces "camelCase name"}}";',
+      },
+    ],
+  });
+}

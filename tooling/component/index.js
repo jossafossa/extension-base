@@ -1,8 +1,6 @@
-const BASE_PATH = "./src/pages/popup/components";
+const BASE_PATH = "./src/components";
 
 export function componentGenerator(plop) {
-  console.log("Loading component generator...");
-
   plop.setGenerator("component", {
     description: "Generate a React component with SCSS module",
     prompts: [
