@@ -13,7 +13,7 @@ export const Settings = () => {
     const formData = new FormData(event.currentTarget);
 
     const newSettings = {
-      logging: formData.get("logging") === "on",
+      debugMode: formData.get("debugMode") === "on",
     } satisfies AvailableSettings;
 
     setSettings(newSettings);
@@ -22,11 +22,11 @@ export const Settings = () => {
   return (
     <form class={classes.settings} onSubmit={handleSubmit}>
       <div>
-        <label htmlFor="logging">enable logging</label>
+        <label htmlFor="debugMode">enable debugMode</label>
         <input
-          checked={settings.logging}
-          id="logging"
-          name="logging"
+          checked={settings.debugMode}
+          id="debugMode"
+          name="debugMode"
           type="checkbox"
         />
       </div>

@@ -1,3 +1,6 @@
+import { getSettings } from "@/api";
+
 export const bootstrap = async () => {
-  console.log("Bootstrap function called");
+  const settings = await getSettings();
+  console.log("Content script loaded with settings:", settings);
 };
