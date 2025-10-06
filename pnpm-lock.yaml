@@ -54,8 +54,8 @@ importers:
         specifier: ^4.0.4
         version: 4.0.4
       '@types/webextension-polyfill':
-        specifier: ^0.12.3
-        version: 0.12.3
+        specifier: ^0.12.4
+        version: 0.12.4
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.8.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.32.0)(typescript@5.8.3))(eslint@9.32.0)(typescript@5.8.3)
@@ -806,8 +806,8 @@ packages:
   '@types/vfile@3.0.2':
     resolution: {integrity: sha512-b3nLFGaGkJ9rzOcuXRfHkZMdjsawuDD0ENL9fzTophtBg8FJHSGbH7daXkEpcwy3v7Xol3pAvsmlYyFhR4pqJw==}
 
-  '@types/webextension-polyfill@0.12.3':
-    resolution: {integrity: sha512-F58aDVSeN/MjUGazXo/cPsmR76EvqQhQ1v4x23hFjUX0cfAJYE+JBWwiOGW36/VJGGxoH74sVlRIF3z7SJCKyg==}
+  '@types/webextension-polyfill@0.12.4':
+    resolution: {integrity: sha512-wK8YdSI0pDiaehSLDIvtvonYmLwUUivg4Z6JCJO8rkyssMAG82cFJgwPK/V7NO61mJBLg/tXeoXQL8AFzpXZmQ==}
 
   '@typescript-eslint/eslint-plugin@7.18.0':
     resolution: {integrity: sha512-94EQTWZ40mzBc42ATNIBimBEDltSJ9RQHCC8vc/PDbxi4k8dVwUAv4o98dk50M1zB+JGFxp43FP7f8+FP8R6Sw==}
@@ -5421,7 +5421,7 @@ snapshots:
       '@types/unist': 2.0.11
       '@types/vfile-message': 2.0.0
 
-  '@types/webextension-polyfill@0.12.3': {}
+  '@types/webextension-polyfill@0.12.4': {}
 
   '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@9.32.0)(typescript@5.8.3))(eslint@9.32.0)(typescript@5.8.3)':
     dependencies:
