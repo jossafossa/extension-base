@@ -28,7 +28,7 @@
     "@preact/preset-vite": "^2.10.2",
     "@stylistic/eslint-plugin": "^5.2.2",
     "@types/chrome": "^0.1.0",
-    "@types/node": "^24.0.10",
+    "@types/node": "^24.7.2",
     "@types/preact-custom-element": "^4.0.4",
     "@types/webextension-polyfill": "^0.12.3",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
